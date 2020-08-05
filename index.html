@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dictionary</title>
+  <link rel="stylesheet" href="./styles.css">
+  <!--	bootstrap CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--    google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+  <!-- Font Poppins  -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <!--font awesome CDN-->
+  <script src="https://kit.fontawesome.com/79361d7429.js" crossorigin="anonymous"></script>
+  <!-- semantic Ui -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css"></link>
+</head>
+
+<body>
+  
+  <nav class="navbar bg-dark">
+    <h3 class="title">
+      Dictionary
+      <i class="fas fa-x fa-book"></i>
+    </h3>    
+    <a class="creator" href="https://www.linkedin.com/in/aditya-pratap-singh-2001/">Creator</a>
+  </nav>
+
+  <div class="container-fluid after-nav">
+    <div class="head">
+      Word Dictionary
+    </div>
+    <div class="container field">
+
+        <input id="search-bar" type="text" placeholder="What are you looking for?">
+        <button id="button" type="button" class="click">
+          <i class="fas fa-search"></i>
+          Search
+        </button>
+        
+        <div class="data">
+          <span class="load">Loading...</span>
+          <p class="def"></p>
+          <div class="audio"></div>
+          <div class="not__found">Not Found</div>
+        </div>
+
+    </div>
+  </div>
+<script src="./app.js"></script>
+</body>
+</html>
