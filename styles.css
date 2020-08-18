@@ -29,6 +29,7 @@ nav{
   /* background-size: cover;
   background-repeat: no-repeat; */
   height: 90vh;
+  margin-bottom: 20px;
 }
 .head{
   color: black;
@@ -38,6 +39,7 @@ nav{
   padding-bottom: 30px;
   text-align: center;
   margin-bottom: 10px;
+  height: 130px;
 }
 #search-bar{
   height: 40px;
@@ -79,7 +81,7 @@ nav{
   background-color: white;
   border: black 2px solid;
   border-radius: 20px;
-  width: 60%;
+  width: 75%;
   margin: auto;
   margin-top: 30px;
   text-align: center;
@@ -101,4 +103,38 @@ nav{
 .load,.def,.not__found{
   font-size: 22px;
   color: black;
+}
+
+@media (max-width:1200px){
+  .click{
+    display: block;
+    margin: auto;
+    width: auto;
+    margin-top: 30px;
+  }
+  .audio{
+    transform: scale(0.61);
+    /* transform: translateX(-35%); */
+  }
+  .not__found{
+    transform: translateY(-130%);
+  }
+  #search-bar{
+    transform: translateX(11%);
+  }
+}
+@media (max-width:467px){
+  .audio{
+    transform: scale(0.61) translateX(-6%);
+  }
+}
+@media (max-width:421px){
+  .audio{
+    transform: scale(0.51) translateX(-20%);
+  }
+}
+@media (max-width:421px){
+  .head{
+    padding-top: 0px;
+  }
 }
