@@ -1,3 +1,5 @@
+alert("Use desktop mode for best experience!");
+
 let input = document.querySelector('#search-bar');
 let button = document.querySelector('#button');
 let KEY = 'be1eb80c-7d92-49f8-9545-2817d19056a0';
