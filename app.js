@@ -30,10 +30,12 @@ async function fetchData(query){
 
   if (data.length==0){
     loading.style.display = 'none';
+    audioBox.style.display = 'none';
     notFound.style.display = 'block';
     notFound.innerHTML = 'Not Found';
     return;
   }
+  audioBox.style.display = 'block';
   loading.style.display = 'none';
   console.log(data);
   let defination = data[0].shortdef[0];
